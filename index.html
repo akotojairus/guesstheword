@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Word Guessing Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 60px;
+      background: #f4f4f4;
+      transition: background 0.4s;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .win { background: #c8f7c5; }
+    .lose { background: #f7c5c5; }
+  </style>
+</head>
+<body>
+
+  <h1>Word Guessing Game</h1>
+
+  <input type="text" id="guessInput" placeholder="Enter your guess">
+  <button onclick="checkGuess()">Submit</button>
+  <button onclick="restartGame()">Restart</button>
+
+  <p id="message"></p>
+  <p id="hint"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
